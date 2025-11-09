@@ -5,30 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ömer F. Tekin</title>
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       height: 100vh;
       background-color: #000;
+      color: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
-      color: #00fff0;
-      font-family: 'Orbitron', sans-serif;
-      font-size: 2rem;
-      text-transform: lowercase;
-      letter-spacing: 3px;
-      text-shadow: 0 0 15px #00fff0, 0 0 30px #00fff0;
-      animation: flicker 2s infinite alternate;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 300;
+      letter-spacing: 2px;
+      font-size: 1.8rem;
+      user-select: none;
     }
 
-    @keyframes flicker {
-      0%, 100% { opacity: 1; text-shadow: 0 0 15px #00fff0, 0 0 30px #00fff0; }
-      50% { opacity: 0.8; text-shadow: 0 0 8px #00fff0, 0 0 20px #00fff0; }
+    .text {
+      text-transform: lowercase;
+      opacity: 0;
+      animation: fadeIn 3s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
     }
   </style>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  future in progress.
+  <div class="text">future in progress.</div>
 </body>
 </html>
